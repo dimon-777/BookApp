@@ -1,0 +1,73 @@
+<%= form_with(model: @user, local: true) do |form| %>
+<div class="promo-wrapper">
+    <section class="promo">
+    <div class='login-links'>
+       <div class='home-buttons'>
+           <h2>Edit Profile</h2>
+           <%= link_to 'Back', root_url %>
+           <hr/>
+           <p>
+           <%= image_tag (current_user.avatar.attached? ? current_user.avatar : "https://placehold.it/100/100"), class:"img-border" %>
+           </p>
+           <br />
+        
+  
+  
+  
+  <div class="field">
+    <%= form.label :Profile_Picture %>
+    <br>
+    <%= form.file_field :avatar, class:'form-control'%>
+  </div>
+    <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :create_password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :confirm_password %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_field :user_bio %>
+  </div>
+
+
+  <div class="field">
+    <%= form.submit class:'button' %>
+  </div>
+
+
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<% end %>
+</section>
+
+
+

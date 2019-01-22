@@ -1,0 +1,23 @@
+<h1 class="book-title">These are your Books, be creative and amaze the world!</h1>
+<div class="book-lists">
+    <ul>
+    <% @books.each do |book| %>
+      <li>
+        <div class="card">
+        <a href="<%= book_path(book.id) %>">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                 <%= image_tag (book.cover.attached? ? book.cover : "placeholder.jpg"), class:"img-border-book" %>
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="my-books-title">
+                   <%= book.name %>
+                </div>
+            </div>
+        </a>
+        </div>
+      </li>  
+      <% end  %>
+    </ul>
+</div>

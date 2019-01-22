@@ -1,0 +1,68 @@
+<div class="regular-wrapper">
+ 
+  <div class="chapter-form">
+   <h1 class="book-title">Editing Chapter from "<%= @book.name %>"</h1>
+    <%= form_with(model: @chapter, url: book_chapter_path) do |form| %>
+        <div class="field">
+            <%= form.label :name %>
+            <%= form.text_field :name %>
+        </div>
+
+      <div class="field">
+        <%= form.text_area :content %>
+      </div>
+    
+      <div class="">
+        <%= form.submit nil, class: "ar-button" %>
+      </div>
+    <% end %>
+  </div>
+
+ <div class="chapter-images">
+      <h2>Illustrations:</h2>
+  <% @illustrations.each_with_index do | illustration, index | %>
+    <div id="drag-img-<%= index %>"  draggable="true">                       
+		 <%= image_tag illustration.illustration, width:100 %>
+    </div>
+  <% end %>
+ </div>
+ </div>
+
+<script>
+ <% @illustrations.each_with_index do | illustration, index | %> 
+$('#drag-img-<%= index %>, #drag-text').on('dragstart', function (e) {
+  e.originalEvent.dataTransfer.setData('Text', this.id);
+})
+<% end %>
+
+$('textarea')
+.on('froalaEditor.initialized', function (e, editor) {
+  editor.events.on('drop', function (dropEvent) {
+    // Focus at the current posisiton.
+    editor.markers.insertAtPoint(dropEvent.originalEvent);
+    var $marker = editor.$el.find('.fr-marker');
+    $marker.replaceWith($.FroalaEditor.MARKERS);
+    editor.selection.restore();
+
+    // Save into undo stack the current position.
+    if (!editor.undo.canDo()) editor.undo.saveStep();
+
+    // Insert HTML.
+    <% @illustrations.each_with_index do | illustration, index | %> 
+
+    if (dropEvent.originalEvent.dataTransfer.getData('Text') == 'drag-img-<%= index %>') {
+      editor.html.insert(' <%= link_to image_tag(illustration.illustration, width: '200'), user_path(illustration.user_id) %> ');
+    }
+    <% end %>
+
+    // Save into undo stack the changes.
+    editor.undo.saveStep();
+
+    // Stop event propagation.
+    dropEvent.preventDefault();
+    dropEvent.stopPropagation();
+    return false;
+  }, true);
+})
+</script>
+

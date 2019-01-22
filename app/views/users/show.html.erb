@@ -1,0 +1,17 @@
+<div class="promo-wrapper">
+  <section class="promo">
+    <div class = 'fail-safe'>
+     <%= image_tag (@user.avatar.attached? ? @user.avatar : "https://placehold.it/100/100" ), class:"img-border" %> 
+      <p class="profile">
+        <%= @user.first_name.capitalize %> <%= @user.last_name.capitalize %>
+      </p>
+
+      <p  class="profile">
+        <%= @user.email %>
+      </p>
+      <p  class="profile">
+        <%= @user.user_type %>
+      </p>
+    </div>
+  </section>
+</div>

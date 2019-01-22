@@ -1,0 +1,54 @@
+<div class='bi'>
+<div class= 'login-div'>
+<div class='login-box'>
+<div class='login-link'>
+
+<%= form_with(model: @user, local: true) do |form| %>
+ <% if @user.errors.any? %>
+   <div id="error_explanation">
+     <h3>Something went wrong.</h3>
+ <% end %>
+
+
+
+
+<h2 class='new-user'>New User</h2>
+<div class="field">
+   <%= form.label :first_name %>
+   <%= form.text_field :first_name %>
+ </div>
+
+ <div class="field">
+   <%= form.label :last_name %>
+   <%= form.text_field :last_name %>
+ </div>
+
+ <div class="field">
+   <%= form.label :email %>
+   <%= form.text_field :email %>
+ </div>
+
+ <div class="field">
+   <%= form.label :create_password %>
+   <%= form.password_field :password %>
+ </div>
+
+ <div class="field">
+   <%= form.label :confirm_password %>
+   <%= form.password_field :password_confirmation %>
+ </div>
+
+ <div class="field">
+   <%= form.label :user_type %>
+   <%= form.collection_select :user_type, User::TYPE, :to_s, :to_s %>
+ </div>
+
+   <p class='tags'><%= form.submit "Create", class: "button" %></p>
+<p class='tags'><%= link_to 'Back', users_path, class: "butttton" %><p>
+</div>
+</div>
+
+</div>
+</div>
+
+<% end %>

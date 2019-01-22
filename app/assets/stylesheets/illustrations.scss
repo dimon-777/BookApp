@@ -1,0 +1,10 @@
+
+ .img-review {
+    float: left;
+ }
+
+ .img-mosaic:after {
+    content: "";
+    display: table;
+    clear: both;
+ }

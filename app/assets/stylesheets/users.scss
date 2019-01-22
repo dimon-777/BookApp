@@ -1,0 +1,1197 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+body, html {
+    height: 100%;
+    
+  }
+ 
+  .login-div {
+     display:flex;
+     justify-content: center;
+     height: 25rem;
+ }
+ 
+ // ---------------------------------BACKGROUND IMAGE -------------------------------------------------------------------------------
+ // ---------------------------------BACKGROUND IMAGE -------------------------------------------------------------------------------
+ // ---------------------------------BACKGROUND IMAGE -------------------------------------------------------------------------------
+ // ---------------------------------BACKGROUND IMAGE -------------------------------------------------------------------------------
+ // ---------------------------------BACKGROUND IMAGE -------------------------------------------------------------------------------
+ // ---------------------------------BACKGROUND IMAGE -------------------------------------------------------------------------------
+ // ---------------------------------BACKGROUND IMAGE -------------------------------------------------------------------------------
+
+@media only screen and (min-width: 768px) {/*for desktop*/
+
+    .bi {
+       background-color:black;
+       background-image: url('bg.jpg');
+       background-position: 0px 0px;
+       background-repeat: repeat-x;
+       min-width: 100%;
+       min-height: 100%;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: contain;
+    
+       animation: animatedBackground 50s linear infinite;
+    
+    }
+    
+    @keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+   
+   }
+
+   @media only screen and (max-width: 768px) {/*for phones*/
+
+    .bi {
+       background-color:black;
+       background-image: url('bg.jpg');
+       background-position: 0px 0px;
+       background-repeat: repeat-x;
+       min-width: 100%;
+       min-height: 100%;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+    
+       animation: animatedBackground 50s linear infinite;
+    
+    }
+    
+    @keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+   
+   }
+
+   @media only screen and (max-width: 375px) {/*for iphone x*/
+
+    .bi {
+       background-color:black;
+       background-image: url('bg.jpg');
+       background-position: 0px 0px;
+       background-repeat: repeat-x;
+       min-width: 100%;
+       min-height: 100%;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+    
+       animation: animatedBackground 50s linear infinite;
+    
+    }
+    
+    @keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+   
+   }
+ 
+ 
+/* ----------------------------------BACKGROUND IMAGE------------------------------------------------ */
+/* ----------------------------------BACKGROUND IMAGE------------------------------------------------ */
+/* ----------------------------------BACKGROUND IMAGE------------------------------------------------ */
+/* ----------------------------------BACKGROUND IMAGE------------------------------------------------ */
+/* ----------------------------------BACKGROUND IMAGE------------------------------------------------ */
+/* ----------------------------------BACKGROUND IMAGE------------------------------------------------ */
+/* ----------------------------------BACKGROUND IMAGE------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {/*for phone*/
+ .login-box {
+         // -moz-transform-origin: 50% 50%;
+         // -webkit-transform-origin: 50% 50%;
+         // -ms-transform-origin: 50% 50%;
+         // transform-origin: 50% 50%;
+         // -moz-transform: rotateX(0deg);
+         // -webkit-transform: rotateX(0deg);
+         // -ms-transform: rotateX(0deg);
+         // transform: rotateX(0deg);
+         // -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+         // -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+         // -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+         // transition: opacity 1s ease, transform 1s ease;
+         background:rgb(255, 255, 255);
+         border-radius: 40px 40px 40px 40px;
+         max-width: 100%;
+         opacity: 0.95;
+        width: 27em;
+        height: 25em;
+        -webkit-transition: opacity 2s ease-in;
+        -moz-transition: opacity 2s ease-in;
+        -o-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+        transition: opacity 2s ease-in;
+        animation-duration:2s;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin:1rem 3rem 2rem 3rem;
+ }
+}
+
+@media only screen and (min-width: 768px) {/*for desktop*/
+    .login-box {
+            // -moz-transform-origin: 50% 50%;
+            // -webkit-transform-origin: 50% 50%;
+            // -ms-transform-origin: 50% 50%;
+            // transform-origin: 50% 50%;
+            // -moz-transform: rotateX(0deg);
+            // -webkit-transform: rotateX(0deg);
+            // -ms-transform: rotateX(0deg);
+            // transform: rotateX(0deg);
+            // -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+            // -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+            // -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+            // transition: opacity 1s ease, transform 1s ease;
+            background:rgb(255, 255, 255);
+            border-radius: 40px 40px 40px 40px;
+            max-width: 100%;
+            opacity: 0.95;
+           width: 27em;
+           height: 35em;
+           -webkit-transition: opacity 2s ease-in;
+           -moz-transition: opacity 2s ease-in;
+           -o-transition: opacity 2s ease-in;
+           -ms-transition: opacity 2s ease-in;
+           transition: opacity 2s ease-in;
+           animation-duration:2s;
+           -webkit-animation-name: fadeIn;
+           animation-name: fadeIn;
+           display:flex;
+           flex-direction: column;
+           text-align: center;
+           font-family: 'Source Sans Pro', sans-serif;
+           margin:4rem 3rem 2rem 3rem;
+    }
+   }
+
+   @media only screen and (max-width: 375px) {/*for iphonex*/
+    .login-box {
+            // -moz-transform-origin: 50% 50%;
+            // -webkit-transform-origin: 50% 50%;
+            // -ms-transform-origin: 50% 50%;
+            // transform-origin: 50% 50%;
+            // -moz-transform: rotateX(0deg);
+            // -webkit-transform: rotateX(0deg);
+            // -ms-transform: rotateX(0deg);
+            // transform: rotateX(0deg);
+            // -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+            // -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+            // -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+            // transition: opacity 1s ease, transform 1s ease;
+            background:rgb(255, 255, 255);
+            border-radius: 40px 40px 40px 40px;
+            max-width: 100%;
+            opacity: 0.95;
+           width: 27em;
+           height: 30em;
+           -webkit-transition: opacity 2s ease-in;
+           -moz-transition: opacity 2s ease-in;
+           -o-transition: opacity 2s ease-in;
+           -ms-transition: opacity 2s ease-in;
+           transition: opacity 2s ease-in;
+           animation-duration:2s;
+           -webkit-animation-name: fadeIn;
+           animation-name: fadeIn;
+           display:flex;
+           flex-direction: column;
+           text-align: center;
+           font-family: 'Source Sans Pro', sans-serif;
+           margin:0.5rem 3rem 3rem 3rem;
+    }
+   }
+ 
+//  @keyframes fadeIn {
+//      0% {opacity: 0;}
+//      100% {opacity: 0.95;}
+//  }
+ 
+//  @-webkit-keyframes fadeIn {
+//      0% {opacity: 0;}
+//      100% {opacity: 0.95;}
+//  }
+ 
+ .login-box .avatar {
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+ }
+ 
+ .login-box .avatar img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 100%;
+        box-shadow: 0 0 0 1.5em #ffffff;
+
+    }
+.avatar-size {
+    border:solid white;
+}
+
+.img-border{
+    border:solid white 1px;
+    border-radius: 0.35em 0.35em 0.35em 0.35em;
+    max-width: 100px;
+    max-height:100px;
+}
+
+.logo {
+    margin: 2em;
+}
+/*--====================================================================*/
+/*--===============================FOR DESKTOP=====================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+
+.login-link .button {/*CONTROLS SPACE BETWEEN CREATE/BACK BUTTONS ON HOMEPAGE*/
+
+    border-color: #116caa;
+    border:solid 1px;
+    color: #116caa;
+    font-size: 1.25em;
+    padding: 0.3em 1em 1.6em 1em;
+    margin:0.8em 0.2em 0.8em 0.2em;
+}
+
+.login-link .butttton {/*specifically for the 'back' button. dont ask*/
+    border-color: #116caa;
+    border:solid 1px;
+    color: #116caa;
+    font-size: 1.25em;
+    padding: 0.3em 1em 0.5em 1em;
+    margin:1.5em 0.2em 0.5em 0.2em;
+    border-radius: 0.35em;
+}
+.login-link .butttton:hover {
+    background-color: #116caa;
+    color: white;
+    border-color:#179dcf;
+
+
+}
+
+.login-link button:hover {
+    border-color: rgba(64, 201, 216, 0.75);
+
+
+}
+
+.login-link input {
+
+    border: solid 1px #116caa;
+    border-radius: 0.35em;
+    color: #116caa;
+    font-size: 1em;
+} 
+
+.login-link h1 {
+    font-weight: 20px;
+    font-size: 35px;
+}
+
+.login-field{
+    color: #116caa;
+    margin: auto;
+    font-size: 1.25em;
+    margin-bottom:4rem;
+}
+
+.login-link label {
+
+    border: solid 1px #116caa;
+    border-radius: 0.35em;
+    padding: 0.2em;
+    color:#116caa;
+}
+
+.login-link input#user_first_name, 
+.login-link input#user_last_name,
+.login-link input#user_email, 
+.login-link input#user_bio, 
+.login-link input#user_password, 
+.login-link select#user_user_type,
+.login-link input#user_password_confirmation, {
+    border: solid 1px #116caa;
+    border-radius: 0.35em;
+    padding: 0.2em;
+    color:#116caa;
+    background-color:transparent;
+}
+
+
+
+.home-buttons {/*for buttons on home page after login, uncomment border so see what i mean*/
+   margin-bottom:5rem;
+//    border:solid 1px;
+}
+@media only screen and (max-width: 375px) {
+.home-buttons {/*for allbuttons on home page after login, uncomment border so see what i mean*/
+    margin-bottom:5rem;
+    display:flex;
+    flex-direction: column;
+
+ //    border:solid 1px;
+ }
+}
+.buttton {
+    border: solid 1px #116caa;
+    border-radius: 0.35em;/*controls border around*/
+
+}
+
+/*--================================FOR DESKTOP====================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+
+                                        /*XXXXXXXX*/
+
+
+/*--====================================================================*/
+/*--===============================FOR I PHONE X=====================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+
+@media only screen and (max-width: 375px) {/*for iphone x*/
+
+    .logo {
+        margin: 2em 2em 0em 2em;
+    }
+
+    .login-link .button {/*CONTROLS SPACE BETWEEN CREATE/BACK BUTTONS ON HOMEPAGE*/
+
+    border-color: #116caa;
+    border:solid 1px;
+    color: #116caa;
+    font-size: 1.0em;
+    padding: 0.3em 1em 1.6em 1em;
+    margin:0.5em 0.2em 1.0em 0.2em;
+}
+
+.login-link .butttton {/*specifically for the 'back' and 'signup' button. dont ask*/
+    border-color: #116caa;
+    border:solid 1px;
+    color: #116caa;
+    font-size: 1.0em;
+    padding: 0.3em 1em 0.2em 1em;
+    margin:0em 0.2em 0em 0.2em;
+}
+.login-link .butttton:hover {
+    background-color: hsl(204, 82%, 37%);
+    color: white;
+    border-color:#179dcf;
+
+
+}
+
+.login-link button:hover {
+    border-color: rgba(64, 201, 216, 0.75);
+
+
+}
+
+.login-link input {
+
+    border: solid 1px #116caa;
+    border-radius: 0.35em;
+    color: #116caa;
+    font-size: 1em;
+} 
+
+.login-link h1 {
+    font-weight: 20px;
+    font-size: 35px;
+}
+
+.login-field{
+    color: #116caa;
+    margin: rem 2rem 5rem 2rem;
+    font-size: 1.25em;
+    margin-bottom:4rem;
+    margin-top:0.2em;
+}
+
+.login-field input#email,
+.login-field input#password {
+    border:solid 1px ;
+    margin-top:0.3rem;
+}
+.login-field label {
+    margin-top:0rem;
+
+}
+
+.login-link label {
+    font-size:1rem;
+    border: solid 1px #116caa;
+    border-radius: 0.35em;
+    padding: 0.2em;
+    margin:0.2em 0.2em 1.0rem 0.2em;
+    color:#116caa;
+}
+
+.login-link input#user_first_name, 
+.login-link input#user_last_name,
+.login-link input#user_email, 
+.login-link input#user_bio, 
+.login-link input#user_password, 
+.login-link select#user_user_type,
+.login-link input#user_password_confirmation, {
+    border: solid 1px #116caa;
+    border-radius: 0.35em;
+    width:7rem;
+    padding: 0.2em;
+    margin-top:0.8rem;
+    color:#116caa;
+    background-color:transparent;
+}
+
+
+
+.home-buttons {
+   margin-bottom:rem;
+}
+
+.buttton {
+    border: solid 1px #116caa;
+    border-radius: 0.35em;/*controls border around*/
+
+}
+input#user_avatar.form-control {
+    width:5.3rem;
+
+    background-color:transparent;
+    height:0.0rem;
+    background:transparent;
+    margin-bottom:0.0rem;
+    margin-top:0.5em;
+    display: inline-block;
+    padding: 50px 0 0px 0;
+    overflow: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png')center center no-repeat transparent;
+  background-size: 50px 50px;
+  outline:none;
+  height:3rem;
+
+  }
+
+
+}
+
+/*--====================================================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--====================================================================*/
+/*--====================================================================*/
+/*--==================================FOR desktop==================================*/
+/*--====================================================================*/
+
+    
+
+.login-links .button {/*FOR EDIT PROFILE AND HOME PAGE AFTER LOGIN*/
+    border-color: #116caa;
+    border:solid 1px;
+    color: #116caa;
+    font-size: 1.25em;
+    padding: 0.3em 1em 1.6em 1em;
+    margin-top:2.0rem
+}
+
+.login-links button:hover {
+    border-color: rgba(64, 201, 216, 0.75);
+
+
+}
+
+.login-links input {
+
+    border-color: #116caa;
+    color: #116caa;
+    font-size: 1em;
+} 
+
+.login-links h1 {
+    font-weight: 20px;
+    font-size: 35px;
+}
+
+.login-field{
+    color: #116caa;
+    margin: 0.6em;
+    font-size: 1.25em;
+}
+
+.login-links label {
+
+    border: solid 1px #116caa;
+    border-radius: 0.35em;
+    padding: 0.5em;
+    height:20rem;
+    margin:2rem 0rem 0rem 0rem;
+    font-size:15px;
+}
+
+.login-links input#user_first_name, 
+.login-links input#user_last_name,
+.login-links input#user_email, 
+.login-links input#user_user_bio, 
+.login-links select#user_user_type,
+.login-links input#user_password, 
+.login-links input#user_password_confirmation,
+.login-linka input.button,
+.login-links input#book_name, 
+.login-links input#book_genre,
+.login-links input#book_user_id {
+    border: solid 1px white;
+    border-radius: 0.35em;
+    padding: 0.5em;
+    color:white;
+    background-color:transparent;
+    height: 30px;
+    
+}
+
+input#user_avatar.form-control {
+    width:5.3rem;
+
+    background-color:transparent;
+    height:0.0rem;
+    background:transparent;
+    margin-bottom:0.0rem;
+    margin-top:0.5em;
+    display: inline-block;
+    padding: 50px 0 0px 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png')center center no-repeat transparent;
+  background-size: 50px 50px;
+  outline:none;
+  height:3rem;
+
+  }
+
+  input#book_cover.form-control {
+    width:5.3rem;
+
+    background-color:transparent;
+    height:0.0rem;
+    background:transparent;
+    margin-bottom:0.0rem;
+    margin-top:0.5em;
+    display: inline-block;
+    padding: 50px 0 0px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png')center center no-repeat transparent;
+    background-size: 50px 50px;
+    outline:none;
+    height:3rem;
+
+  }
+/*--====================================================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+/*--====================================================================*/
+
+/*=====================================================BOOK EDITING CSS=======================================*/
+.book-label {
+    border: solid 1px #116caa;
+    border-radius: 0.35em;
+
+    height:20rem;
+    margin:10rem 0rem 10rem 0rem;
+    font-size:15px;
+    color:white;
+} 
+
+
+
+
+
+/* Button-----------AAAAAAAAAAAAAAAAAAAAAAAAA------targets the fancy 'search for books'/'edit profile' buttons, not a big change---------------------------------------------------------------------- */
+    /* Button-----------AAAAAAAAAAAAAAAAAAAAAAAAA---------------------------------------------------------------------------- */
+    /* Button-----------AAAAAAAAAAAAAAAAAAAAAAAAA---------------------------------------------------------------------------- */
+    /* Button-----------AAAAAAAAAAAAAAAAAAAAAAAAA---------------------------------------------------------------------------- */
+    
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+        -moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+        -webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+        -ms-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+        transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+        display: inline-block;
+        color: inherit;
+        background: none;
+        text-decoration: none;
+        border: solid 1px #c2c7cc;
+        border-radius: 0.35em;
+        padding: 0.4em 0.8em 0em 0.8em;
+        cursor: pointer;
+        outline: 0;
+        margin-top: em;
+        height: 0rem;
+    }
+
+        input[type="button"]:hover,/*CONTROLS HOME PAGE BUTTONS HOVER EFFECT*/
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        button:hover,
+        .button:hover {
+            background-color: #116caa;
+            color: white;
+            border-color:#179dcf;
+        }
+/* Button-----------AAAAAAAAAAAAAAAAAAAAAAAAA---------------------------------------------------------------------------- */
+/* Button-----------AAAAAAAAAAAAAAAAAAAAAAAAA---------------------------------------------------------------------------- */
+/* Button-----------AAAAAAAAAAAAAAAAAAAAAAAAA---------------------------------------------------------------------------- */
+/* Button-----------AAAAAAAAAAAAAAAAAAAAAAAAA---------------------------------------------------------------------------- */
+
+.new-user {
+
+    margin-bottom:20px;
+    color:#179dcf;
+
+}
+
+.profile {
+    margin: 1em;
+}
+
+.img-review input.ar-button {
+
+   padding: 0px 0px 0px 0px;
+    height:2rem;
+    margin: 5px 0px 5px 0px;
+    width:7rem;
+}
+
+.img-review .image-display {
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.chapter-form input.ar-button {
+    height:2.5rem;
+    background: #fff;
+    border:solid 1px;
+    color: #27636B;
+    font-size: 1.00em;
+    padding: 0px 6px 2px 6px;
+}
+
+.chapter-form input#chapter_name {
+    border: solid 1px#27636B;
+    border-radius: 0.35em;
+    width:7rem;
+    padding: 0.2em;
+    margin-top:0.8rem;
+    color: #27636B;
+    background-color:transparent;
+    outline: none;
+
+}
+
+.chapter-form label {
+    color: #27636B;
+    border-radius: 0.35em;
+    padding: 0.5em;
+    height:20rem;
+    margin:2rem 0rem 0rem 0rem;
+    font-size:15px;
+
+}
+
+
+
+
+/* Main =============================================================================*/
+/* Main =============================================================================*/
+/* Main =============================================================================*/
+/* Main =============================================================================*/
+
+#main-il {
+
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow:auto;
+    padding: 5px;
+    background-image: url("images/overlay.png"), url("images/promo.jpg");
+    background-size: cover;
+    border:solid white 2px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top:-3rem;
+    flex-wrap:wrap;
+}
+
+
+
+    #main-il .items {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+    }
+
+        #main-il .items > :last-child {
+
+        }
+
+    #main-il .item {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        margin: 5px;
+        height: 16em;
+
+    }
+
+        #main-il .item.span-1 {
+            width: 20em;
+        }
+
+        #main-il .item.span-2 {
+            width: 30em;
+        }
+
+        #main-il .item.span-3 {
+            width: 40em;
+        }
+
+        #main-il .item.intro {
+            background-color: #1780a0;
+            background-image: url("images/overlay.png");
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -moz-justify-content: center;
+            -webkit-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            padding: 1em 3em;
+        }
+
+            #main-il .item.intro h1 {
+                font-size: 3em;
+                line-height: 1em;
+            }
+
+            #main-il .item.intro p {
+                font-size: 1.25em;
+                line-height: 1.5em;
+                margin: 0.5em 0 0 0;
+                opacity: 0.65;
+            }
+
+        #main-il .item.thumb {
+            display: block;
+            position: relative;
+            background: rgba(255, 255, 255, 0.25);
+            cursor: default;
+        }
+
+            #main-il .item.thumb h2 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: rgba(18, 21, 29, 0.85);
+                width: 100%;
+                padding: 1em;
+                font-weight: 400;
+                line-height: 1em;
+                z-index: 2;
+            }
+
+            #main-il .item.thumb img {
+                display: block;
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                -moz-object-fit: cover;
+                -webkit-object-fit: cover;
+                -ms-object-fit: cover;
+                object-fit: cover;
+                -moz-object-position: center;
+                -webkit-object-position: center;
+                -ms-object-position: center;
+                object-position: center;
+                -moz-transition: opacity 0.75s ease-in-out;
+                -webkit-transition: opacity 0.75s ease-in-out;
+                -ms-transition: opacity 0.75s ease-in-out;
+                transition: opacity 0.75s ease-in-out;
+                -moz-transition-delay: 1.25s;
+                -webkit-transition-delay: 1.25s;
+                -ms-transition-delay: 1.25s;
+                transition-delay: 1.25s;
+            }
+
+            #main-il .item.thumb.delay-1 img {
+                -moz-transition-delay: 1.375s;
+                -webkit-transition-delay: 1.375s;
+                -ms-transition-delay: 1.375s;
+                transition-delay: 1.375s;
+            }
+
+            #main-il .item.thumb.delay-2 img {
+                -moz-transition-delay: 1.5s;
+                -webkit-transition-delay: 1.5s;
+                -ms-transition-delay: 1.5s;
+                transition-delay: 1.5s;
+            }
+
+            #main-il .item.thumb.delay-3 img {
+                -moz-transition-delay: 1.625s;
+                -webkit-transition-delay: 1.625s;
+                -ms-transition-delay: 1.625s;
+                transition-delay: 1.625s;
+            }
+
+            #main-il .item.thumb.delay-4 img {
+                -moz-transition-delay: 1.75s;
+                -webkit-transition-delay: 1.75s;
+                -ms-transition-delay: 1.75s;
+                transition-delay: 1.75s;
+            }
+
+            #main-il .item.thumb.delay-5 img {
+                -moz-transition-delay: 1.875s;
+                -webkit-transition-delay: 1.875s;
+                -ms-transition-delay: 1.875s;
+                transition-delay: 1.875s;
+            }
+
+            #main-il .item.thumb.delay-6 img {
+                -moz-transition-delay: 2s;
+                -webkit-transition-delay: 2s;
+                -ms-transition-delay: 2s;
+                transition-delay: 2s;
+            }
+
+    body.is-preload #main-il {
+        opacity: 0;
+    }
+
+        body.is-preload #main-il .item.thumb img {
+            opacity: 0;
+        }
+
+    @media screen and (max-width: 1680px) {
+
+        #main-il .item {
+            height: 14em;
+        }
+
+            #main-il .item.span-1 {
+                width: 17em;
+            }
+
+            #main-il .item.span-2 {
+                width: 25.5em;
+            }
+
+            #main-il .item.span-3 {
+                width: 34em;
+            }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #main-il {
+            width: 100%;
+            overflow-x: hidden;
+
+            padding: 2.5px;
+        }
+
+            #main-il .items {
+                -moz-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -moz-justify-content: center;
+                -webkit-justify-content: center;
+                -ms-justify-content: center;
+                justify-content: center;
+            }
+
+                #mail-il .items > :last-child {
+                    border-right: 0;
+                }
+
+            #main-il .item {
+                -moz-flex-grow: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-grow: 1;
+                flex-grow: 1;
+                -moz-flex-shrink: 1;
+                -webkit-flex-shrink: 1;
+                -ms-flex-shrink: 1;
+                flex-shrink: 1;
+                width: calc(50vw - 15px) !important;
+                margin: 2.5px;
+               
+            }
+
+                #main-il .item.intro {
+                    width: calc(100vw - 20px) !important;
+                    text-align: center;
+                    height: auto;
+                    padding: 3em;
+                }
+
+                    #main-il .item.intro h1 {
+                        font-size: 2em;
+                    }
+
+                    #main-il .item.intro p {
+                        font-size: 1em;
+                    }
+
+                #main-il .item.thumb h2 {
+                    display: none;
+                }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        #main-il .item {
+            height: 10em;
+        }
+
+    }
+/* Main =============================================================================*/
+/* Main =============================================================================*/
+/* Main =============================================================================*/
+/* Main =============================================================================*/
+/* Main =============================================================================*/
+/* Main =============================================================================*/
+/* Main =============================================================================*/    
+
+
+
+
+/* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+/* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+/* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+/* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+
+#wrapper-il {
+    background-image: url("images/overlay.png"), url("images/promo.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-transition: -moz-filter 0.5s ease-in-out;
+    -webkit-transition: -webkit-filter 0.5s ease-in-out;
+    -ms-transition: -ms-filter 0.5s ease-in-out;
+    transition: filter 0.5s ease-in-out;
+    padding-bottom: 100rem;
+    border:solid blue px;
+}
+
+    #wrapper-il:before {
+        content: '';
+        display: block;
+    }
+
+    body.is-poptrox-visible #wrapper-il {
+        -moz-filter: blur(0.25em);
+        -webkit-filter: blur(0.25em);
+        -ms-filter: blur(0.25em);
+        filter: blur(0.25em);
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #wrapper-il {
+            min-height: 0;
+        }
+
+    }
+
+
+    /* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+/* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+/* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+/* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+/* Wrapper PPPPPPPPPPPPPPPPPPPP---------------------------------------------------------*/
+
+.illustrations-page {
+    // border:solid orange 1px;
+    display:flex;
+    justify-content: center;
+    height:20rem;
+}
+
+
+
+
+
+.illus-tag {
+    border:solid red 1px;
+    display:flex;
+    justify-content: center;
+}
+
+select#illustration_book_id {/*controls book selection on illustrations page*/
+    // border:solid blue 1px;
+    padding-bottom:5rem;
+    margin-top:1rem;
+}
+.illus-file-field {/*controls label for upload image AND upload image button SPACING*/
+    margin-top:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:8rem;
+}
+
+
+.illus-file-field-label {
+    // border: purple 2px solid;
+    width:10rem;
+    padding:auto;
+    margin-right:-1rem;
+    color:#fff;
+
+
+}
+
+#promo input#illustration_illustration {/* for the widget that allows you to upload an image*/
+    width:5.0rem;
+    background-color:transparent;
+    height:0.0rem;
+    background:transparent;
+    margin-bottom:0.0rem;
+    margin-top:0.3em;
+    padding: 50px 0 0px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png')center center no-repeat white;
+  background-size: 50px 50px;
+  border-radius:0.35rem 0.35rem 0.35rem 0.35rem;
+  outline:none;
+  height:1rem;
+  margin-right:20rem !important;
+}
+
+.illustrations-page .create-image {/*create illustration button*/
+    background: transparent;
+    border-color: #27636B;
+    color: #27636B;
+    font-size: 1em;
+    height:3rem;
+    padding-bottom:0.2em;
+    margin-top: -4em;
+
+}
+.illustrations-page .create-image:hover {
+    background: #fff;
+    color: #27636B;
+}
+
+.book-titles {
+margin-top: 2.5%;
+font-size: 40px;
+display:flex;
+justify-content: center;
+}
+
+.illustration-body {
+    overflow: hidden;
+}
+.illustration-body .flash-notice {
+    font:inherit;
+    color: #27636B;
+    display:flex;
+    justify-content: center;
+
+}
+
+#promo .ill-font {
+    // border:red solid 1px;
+    font-size:1.0rem;
+    padding-left:10em;
+}
+
+
+
+

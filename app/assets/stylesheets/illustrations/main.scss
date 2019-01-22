@@ -1,0 +1,323 @@
+// =---------------------------------------lets go--------------------------------------------
+// =---------------------------------------lets go--------------------------------------------
+// =---------------------------------------lets go--------------------------------------------
+// =-------no--------------------------------lets go--------------------------------------------
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+	vertical-align: baseline;}
+
+
+	html {
+		box-sizing: border-box;
+
+	}
+
+// =---------------------------------------lets go--------------------------------------------
+// =---------------------------------------lets go--------------------------------------------
+// =---------------------------------------lets go--------------------------------------------
+// =---------------------------------------lets go--------------------------------------------
+
+
+/* Basic --PPPPPPPPPPPPPPP-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Basic -----------------PPPPPPPP----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* BasicPPPPPPPPPPPPPPPP ---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Basic --------------PPPPPPPPPPP-------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Basic ---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+
+
+	body, select, textarea {
+		font-family: 'Source Sans Pro';
+		font-weight: 400;
+		padding: 0;
+		font-size: 13pt;
+	}
+
+	
+
+
+
+/* Basic -----PPPPPPPPPPP----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Basic ----------------PPPPPPP-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Basic -----------------------PPPPPP----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Basic -----------------------------pPPPPPPPPPP----------------------------------------------------------------------------------------------------------------------------------*/
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+
+	.scrollZone {
+		position: fixed;
+		width: 6rem;
+		height: 100vh;
+		cursor: -moz-grab;
+		cursor: -webkit-grab;
+		cursor: -ms-grab;
+		cursor: grab;
+		z-index: 10001;
+	}
+
+		.scrollZone.left {
+			left: 0;
+		}
+
+		.scrollZone.right {
+			right: 0;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.scrollZone {
+				display: none;
+			}
+
+		}
+
+
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+/* Scroll Zone -----------------------------------(((((((((((((((((((((*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+
+	.poptrox-popup {
+		background: #1a1f2c;
+		background: rgba(18, 21, 29, 0.9);
+		box-shadow: 0px 0px 0px 10px #fff, 0px 10px 60px 10px rgba(8, 11, 19, 0.55);
+		cursor: default;
+	}
+
+		.poptrox-popup .loader {
+			display: block;
+			width: 48px;
+			height: 48px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -24px 0 0 -24px;
+			background: url("images/loader.gif");
+			opacity: 0.25;
+		}
+
+		.poptrox-popup .caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: #1a1f2c;
+			background: rgba(18, 21, 29, 0.85);
+			display: block;
+			width: 100%;
+			line-height: 75px;
+			text-align: center;
+			font-size: 1.25em;
+		}
+
+		.poptrox-popup .nav-next, .poptrox-popup .nav-previous {
+			text-decoration: none;
+			font-weight: normal;
+			font-style: normal;
+			-moz-transition: opacity 0.25s ease-in-out;
+			-webkit-transition: opacity 0.25s ease-in-out;
+			-ms-transition: opacity 0.25s ease-in-out;
+			transition: opacity 0.25s ease-in-out;
+			opacity: 0.35;
+		}
+
+			.poptrox-popup .nav-next:hover, .poptrox-popup .nav-previous:hover {
+				opacity: 1.0;
+			}
+
+		.poptrox-popup .nav-next, .poptrox-popup .nav-previous {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			width: 150px;
+			height: 75px;
+			position: absolute;
+			bottom: 0;
+			cursor: pointer;
+			font-size: 3em;
+			line-height: 75px;
+		}
+
+		.poptrox-popup .nav-next {
+			right: 0;
+			text-align: right;
+			padding-right: 30px;
+		}
+
+			.poptrox-popup .nav-next:before {
+				content: '\f105';
+			}
+
+		.poptrox-popup .nav-previous {
+			left: 0;
+			text-align: left;
+			padding-left: 30px;
+		}
+
+			.poptrox-popup .nav-previous:before {
+				content: '\f104';
+			}
+
+		@media screen and (max-width: 736px) {
+
+			.poptrox-popup {
+				background: #0a0f1c;
+				box-shadow: 0px 0px 30px 10px rgba(8, 11, 19, 0.85);
+				border: solid 2.5px #fff;
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+				-ms-box-sizing: content-box;
+				box-sizing: content-box;
+			}
+
+				.poptrox-popup .caption {
+					display: none !important;
+				}
+
+				.poptrox-popup .nav-next {
+					display: none !important;
+				}
+
+				.poptrox-popup .nav-previous {
+					display: none !important;
+				}
+
+		}
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */
+/* Popup--------------VVVVVVVVVVVVVVVVVVVVVVVVvvvvvvvvvvvvvvvvvvvvvvvv */

@@ -1,0 +1,23 @@
+
+<div class='illustrations-page'>
+
+
+<% image_tag @illustration.illustration if @illustration.illustration.attached? %>
+
+<%= form_with(model: illustration, local: true) do |form| %>
+  <%= form.hidden_field :user_id, value: current_user.id %>
+  <%= form.select :book_id, options_for_select( current_user.favorites.map { |book| [book.name, book.id] }) %>
+  <div class="illus-file-field">
+  <div class="illus-file-field-label">
+    <%= form.label :select_illustration %>
+    <%= form.file_field :illustration %>
+  </div>
+  </div>
+  <div class="action">
+    <%= form.submit "Add Illustration", class:'create-image' %>
+  </div>
+
+
+<% end %>
+</div>
+

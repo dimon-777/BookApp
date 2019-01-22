@@ -1,0 +1,21 @@
+<h1 class="book-title"><%= @book.name %></h1>
+
+<% if @chapters.empty? %>
+<h1 class="no-chapters"> You have no chapters yet, add one <%= link_to 'Here', new_book_chapter_path %>.</h1>
+<% else %>
+
+<div class="div-cover">
+<%#= image_tag 'book-placeh.jpg', class:"cover-chapter" %>
+</div>
+<%= react_component 'Chapters', props: { id: @book.id } %>
+
+<script>
+$(document).ready(function(){
+            let s = window.location.href 
+            if(!s.includes("#")){
+             document.getElementById("bb-nav-next").click();
+             }
+        });
+</script>
+
+<% end %>

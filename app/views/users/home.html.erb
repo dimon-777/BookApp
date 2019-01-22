@@ -1,0 +1,23 @@
+<div class="promo-wrapper">
+       <section class="promo">
+           <h2>Hello, <%= current_user.first_name %></h2>
+           <hr />
+           <p>
+           <%= image_tag (current_user.avatar.attached? ? current_user.avatar : "https://placehold.it/100/100"), class:"img-border" %>
+           </p>
+           <br />
+           <ul>
+              <div class='home-buttons'>
+             <li><%= link_to 'Search for Books', books_path, class:"buttton" %></li>
+             <li><%= link_to 'Edit Profile', edit_user_path(current_user), class:"buttton" %></li>
+             <% if current_user.user_type == 'Author'%>
+             <li><%= link_to 'My Books', my_books_path, class:"buttton"  %></li>
+             <li><%= link_to 'Write New Book', new_book_path, class:"buttton"  %></li>
+             <% else %>
+             <li><%= link_to 'My BookList', favorites_path, class:"buttton"  %></li>
+             <li><%= link_to 'My Illustrations', illustrations_path, class:"buttton"  %></li>
+             <% end %>
+            </ul>
+            </div>
+       </section>
+</div>

@@ -1,0 +1,27 @@
+<div class='bi'>
+  <div class= 'login-div'>
+    <div class='login-box'>
+      <div class='login-link'>
+        <%= image_tag 'bookart-logo', width:200, class:"logo" %>
+         <%= form_tag({controller: "sessions", action: "create"}) do %>
+           <div class="container">
+             <% flash.each do |key, value| %>
+               <div style="color:red;" class="alert alert-<%= key %>"><%= value %></div>
+              <% end %>
+              <%= yield %>
+          </div>
+           <div class="login-field">
+            <%= label_tag :email %>
+            <%= text_field_tag :email, params[:email] %>
+          </div>
+          <div class="login-field">
+            <%= label_tag :password %>
+            <%= password_field_tag :password %>
+          </div>
+           <p class='tags'><%= submit_tag "Log In", class: "button" %></p>
+          <% end %>
+        <p class='tags'><%= link_to 'Sign Up', new_user_path, class: "butttton" %></p>
+      </div>
+     </div>
+  </div>
+</div>

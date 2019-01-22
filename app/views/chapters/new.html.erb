@@ -1,0 +1,19 @@
+<div class="new-chapter-wrapper">
+<%= link_to 'Back to '+@book.name, book_chapters_path %>
+  <h1 class="book-title">New Chapter for "<%= @book.name %>"</h1>
+  <%= form_for([@book, Chapter.new]) do |form| %>
+      <div class="field">
+          <%= form.label :name %>
+          <%= form.text_field :name %>
+      </div>
+
+    <div class="field">
+      <%= form.text_area :content %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit 'Create New Chapter', class: "create-chapter" %>
+    </div>
+  <% end %> 
+
+</div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookArt</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'navbar/navbar', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.5">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'app-bundle' %>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+     <!-- Include Editor CSS. -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+     <%= stylesheet_link_tag    'editor/froala_editor.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/froala_style.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/code_view.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/colors.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/emoticons.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/image_manager.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+     <%= stylesheet_link_tag    'editor/plugins/image.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/line_breaker.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/table.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/char_counter.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/video.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/fullscreen.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'editor/plugins/file.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+   <%= render "shared/nav" if current_user %>
+    <%= yield %>
+    </div>
+
+  </body>
+  <%= javascript_include_tag 'book/modernizr.custom', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'book/book', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'book/jquery.bookblock', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_include_tag 'editor/froala_editor.min.js', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'editor/froala_editor.pkgd.min.js', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_include_tag 'navbar/jquery.dropotron.min', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'navbar/browser.min', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'navbar/breakpoints.min', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'navbar/util', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'navbar/main', 'data-turbolinks-track': 'reload' %>
+
+
+  <%= javascript_include_tag 'illustrations/jquery.poptrox.min', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'illustrations/browser.min', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'illustrations/breakpoints.min', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'illustrations/main', 'data-turbolinks-track': 'reload' %>
+
+
+    <!-- Initialize the editor. -->
+    <script> $(function() { $('textarea').froalaEditor({height: 300}) }); </script>
+
+</html>

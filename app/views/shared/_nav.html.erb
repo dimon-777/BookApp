@@ -1,0 +1,25 @@
+
+   <!-- Header -->
+<div id="header-wrapper">
+    <div id="header" class="container">
+
+        <!-- Logo -->
+            <h1 id="logo"><%= link_to 'BOOKART', root_url %></h1>
+
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="#">Recent Books</a>
+                        
+                        <ul>
+                            <% get_current_favorites.each do |book|%>
+                                <li class='recent-books'><%= link_to book.name, book %></li>
+                            <% end %>
+                        </ul>
+                    </li>
+                    <li class="break"><%= link_to 'Log Out', logout_path %></li>
+                </ul>
+            </nav>
+        </div>
+	</div>

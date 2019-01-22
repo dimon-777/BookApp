@@ -1,0 +1,84 @@
+<div class='illustration-body'>
+    
+	
+	<%= stylesheet_link_tag 'illustrations/main', media: 'all', 'data-turbolinks-track': 'reload' %>
+						<h2 class='book-titles'>My Illustrations</h2>
+						<p class='flash-notice'><%= flash[:notice] %></p>
+						<p class='flash-notice'><%= flash[:alert] %></p>
+		<br>
+		<br>
+		<!-- Wrapper, promo id is working -->
+			<div id="promo"> 
+					
+						<br>
+			
+			
+				<% if @favorites.empty? %>
+					<h2>You have no books added to your booklist, go add some&nbsp;<%= link_to 'here', books_path %>.</h2>
+				<% else %>
+					
+				<%= render "new", illustration: @illustration %>
+				<p>Select your book of preference, then assign an illustration to it</p>
+
+				<% end %>
+				
+
+				<!-- Main -->
+					<section id="main-il">
+
+						<!-- Items -->
+							<div class="items">
+								<% @illustrations.each_with_index do | illustration, index | %>
+                                <% if index.even? %>
+                                  <article class="item thumb span-1">
+                                    <h2 class='ill-font'>
+										<%= illustration.book.name %>
+										<%= link_to illustration_path(illustration), method: :delete do %>
+											<i class="far fa-times-circle fa-2x" title= "Delete"></i>
+										<% end %>
+									</h2>
+       
+
+                                    <% image_url = ( illustration.illustration.attached? ? illustration.illustration : "https://placehild.it/100/100" ) %>
+                                    <%= link_to image_url, class: "image" do %>
+                                        <%= image_tag  image_url %>
+                                    <% end %>
+                                  </article>
+                                <% end %>
+                                <% end %>
+
+							</div>
+
+						<!-- Items -->
+							<div class="items">
+                            <% @illustrations.each_with_index do | illustration, index | %>
+                                <% if index.odd? %>
+                                  <article class="item thumb span-1">
+                                    <h2 class='ill-font'>
+										<%= illustration.book.name %>
+										<%= link_to illustration_path(illustration), method: :delete do %>
+											<i class="far fa-times-circle fa-2x" title= "Delete"></i>
+										<% end %>
+									</h2>
+                                    <% image_url = ( illustration.illustration.attached? ? illustration.illustration : "https://placehild.it/100/100" ) %>
+                                    <%= link_to image_url, class: "image" do %>
+                                        <%= image_tag  image_url %>
+                                    <% end %>
+                                  </article>                                
+								<% end %>
+							<% end %>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				
+
+			</div>
+</div>
+<section id="footer">
+	<br>
+	<br>
+	<br>
+</section>
+

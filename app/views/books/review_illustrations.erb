@@ -1,0 +1,38 @@
+ <div class="promo-wrapper">
+  <section class="promo">
+   <p class="profile"><%= flash[:notice] %></p>
+
+       <p class="profile">
+         <%=  @illustrations.empty? ? 'No Illustrations to Review at the Moment!' : 'Review Illustrations for '+@book.name.capitalize  %>
+      </p>
+ 
+   
+    
+     <% @illustrations.each do | picture |  %>
+        <div class="img-review">
+            <div class="image-display">
+                <%= image_tag picture.illustration, class:"img-border" %>
+            <%= form_with model:picture, local:true do |form|%>
+                <%= form.hidden_field :id %>
+                <%= form.hidden_field :approved, value: false %>
+                <%= form.submit "reject", class:'ar-button' %>
+            <% end %>
+            <%= form_with model:picture, local:true do |form|%>
+                <%= form.hidden_field :id %>
+                <%= form.hidden_field :approved, value: true %>
+                <%= form.submit "accept", class:'ar-button'%>
+            <% end %>
+            </div>
+        </div>
+    <% end %>
+  </section>
+</div>
+</div>
+
+
+ 
+
+
+
+
+
